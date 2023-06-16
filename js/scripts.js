@@ -11,3 +11,15 @@ function Pizza(toppings, size) {
       alert("Please choose your toppings.");
     }
   };
+
+  Pizza.prototype.sizeCost = function () {
+    if (this.size === "Small") {
+        return 10; 
+    } else if (this.size === "Medium") {
+        return 12; 
+    } else if (this.size === "Large") {
+        return 14
+    } else {
+        alert ("Please select a size that you would prefer")
+    }
+  }
