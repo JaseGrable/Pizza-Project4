@@ -44,12 +44,15 @@ Copyright (c) Jase Grable
 Code: const myPizza = new Pizza( "2", "medium")
 Expected Output: Pizza {toppings:"2", size: "medium"}
 
+- Describe: Pizza.prototype.toppingsCost = function ()
+  -- Test: "It Should calculate the cost based on amount of toppings selected for pizza"
+  --- Code: const myPizza = new Pizza (["pepperoni", "mushroom", "olives"], "large")
+  --- const toppingCost = myPizza.toppingCost()
+  --- console.log(toppingCost);
+  -- Expected Output: 9
+
 - Describe: sizeCost()
   Test: "It should calculate cost based on size customer selected"
-  Code:
-
-- Describe: toppingsCost()
-  Test: "It Should calculate the cost based on amount of toppings selected for pizza"
   Code:
 
 - Describe: calculateTotalCost()
