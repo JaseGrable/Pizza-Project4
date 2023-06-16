@@ -23,8 +23,8 @@
 - Navigate to top level directory
 - open index.html in your browser
 - pick your pizza toppings
-  *click submit
-  *receive cost
+- click submit
+- receive cost
 
 ## Known Bugs
 
@@ -35,3 +35,7 @@
 MIT
 
 Copyright (c) Jase Grable
+
+### Test Driven Development
+
+- Describe:
