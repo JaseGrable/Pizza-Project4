@@ -38,4 +38,20 @@ Copyright (c) Jase Grable
 
 ### Test Driven Development
 
-- Describe:
+- Describe: Pizza()
+
+Test: "It should return a pizza object with two properties for toppings and size"  
+Code: const myPizza = new Pizza(["pepperoni", "mushrooms"], "medium")
+Expected Output: Pizza {toppings: ["pepperoni", "mushrooms"], size: "medium"}
+
+- Describe: sizeCost()
+  Test: "It should calculate cost based on size customer selected"
+  Code:
+
+- Describe: toppingsCost()
+  Test: "It Should calculate the cost based on amount of toppings selected for pizza"
+  Code:
+
+- Describe: calculateTotalCost()
+  Test: "It should return the combined cost of the pizza based on size and topping choice"
+  Code:
