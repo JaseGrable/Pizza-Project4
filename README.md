@@ -40,9 +40,9 @@ Copyright (c) Jase Grable
 
 - Describe: Pizza()
 
-Test: "It should return a pizza object with two properties for toppings and size"  
-Code: const myPizza = new Pizza(["pepperoni", "mushrooms"], "medium")
-Expected Output: Pizza {toppings: ["pepperoni", "mushrooms"], size: "medium"}
+-- Test: "It should return a pizza object with two properties for toppings and size"  
+Code: const myPizza = new Pizza( "2", "medium")
+Expected Output: Pizza {toppings:"2", size: "medium"}
 
 - Describe: sizeCost()
   Test: "It should calculate cost based on size customer selected"
