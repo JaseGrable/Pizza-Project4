@@ -38,25 +38,26 @@ Copyright (c) Jase Grable
 
 ### Test Driven Development
 
-- Describe: Pizza()
-  Test: "It should return a pizza object with two properties for toppings and size"  
-  Code: const myPizza = new Pizza( ["pepperoni", "mushroom", "olives"], "medium")
-  Expected Output: Pizza {toppings:"["pepperoni", "mushroom", "olives"]", size: "medium"}
+#### Describe: Pizza()
 
-- Describe: Pizza.prototype.toppingsCost = function ()
-  Test: "It Should calculate the cost based on amount of toppings selected for pizza"
-  Code: const myPizza = new Pizza (["pepperoni", "mushroom", "olives"], "large")
-  const toppingCost = myPizza.toppingCost() // console.log(toppingCost);
-  Expected Output: 9
+- Test: "It should return a pizza object with two properties for toppings and size"
+- Code: const myPizza = new Pizza( ["pepperoni", "mushroom", "olives"], "medium")
+- Expected Output: Pizza {toppings:"["pepperoni", "mushroom", "olives"]", size: "medium"}
 
-- Describe: Pizza.prototype.sizeCost = function ()
-  Test: "It should calculate cost based on size customer selected"
-  Code: const newPizza = (["pepperoni", "mushrooms", "olives"], "Medium")
-  newPizza.sizeCost()
-  Expected Output: 10
+#### Describe: Pizza.prototype.toppingsCost = function ()
 
-- Describe: Pizza.prototype.totalCost = function ()
-  Test: "It should return the combined cost of the pizza based on size and topping choice"
-  Code: const newPizza = (["pepperoni", "mushrooms", "olives"], "Large")
-  newPizza.totalCost()
-  Expected Output: 23
+- Test: "It Should calculate the cost based on amount of toppings selected for pizza"
+- Code: const myPizza = new Pizza (["pepperoni", "mushroom", "olives"], "large") // const toppingCost = myPizza.toppingCost() // console.log(toppingCost);
+- Expected Output: 9
+
+#### Describe: Pizza.prototype.sizeCost = function ()
+
+- Test: "It should calculate cost based on size customer selected"
+- Code: const newPizza = (["pepperoni", "mushrooms", "olives"], "Medium") // newPizza.sizeCost()
+- Expected Output: 10
+
+#### Describe: Pizza.prototype.totalCost = function ()
+
+- Test: "It should return the combined cost of the pizza based on size and topping choice"
+- Code: const newPizza = (["pepperoni", "mushrooms", "olives"], "Large") // newPizza.totalCost()
+- Expected Output: 23
