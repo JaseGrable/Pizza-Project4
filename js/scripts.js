@@ -23,3 +23,9 @@ function Pizza(toppings, size) {
         alert ("Please select a size that you would prefer")
     }
   }
+
+  Pizza.prototype.totalCost = function () {
+    const toppingsCost = this.toppingsCost();
+    const sizeCost = this.sizeCost();
+    const totalCost = toppingsCost + sizeCost;
+  }
