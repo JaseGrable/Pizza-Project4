@@ -28,4 +28,13 @@ function Pizza(toppings, size) {
     const toppingsCost = this.toppingsCost();
     const sizeCost = this.sizeCost();
     const totalCost = toppingsCost + sizeCost;
+    return totalCost
   }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    const form = document.getElementById("pizzaForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        document.getElementById("showBill").style.display = "block"; 
+    })
+  })
