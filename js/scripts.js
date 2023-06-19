@@ -48,8 +48,10 @@ function Pizza(toppings, size) {
     checkboxes.forEach(function(checkbox) {
         const inputtedToppings = checkbox.value;
         toppingArray.push(inputtedToppings);
-        document.getElementById("displayToppings").textContent += inputtedToppings + ",";
+        // document.getElementById("displayToppings").textContent += inputtedToppings + ",";
     });
+    
+    document.getElementById("displayToppings").textContent = toppingArray.join(", ");
 
     const inputtedSize = document.querySelector("input[name=sizePizza]:checked").value;
     document.getElementById("displayName").textContent = inputtedName; 
