@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pizza Parlor Project</title>
 </head>
 <body>
+    <h1><em>Grable's Table: Pizza & More</em></h1>
+    
     <form id="pizzaForm">
-        <label for="userName">
-          Enter a name:
-          <input type="text" id="name" name="name" />
-        </label>
-        <p>Pick your number of toppings:</p>
-        <label for="toppings"> 1 toppings </label>
-        <input name="toppings" type="radio" value="oneTopping"/>
-        <label for="toppings"> 2 toppings </label>
-        <input name="toppings" type="radio" value="twoTopping"/>
-        <label for="toppings"> 3 toppings </label>
-        <input name="toppings" type="radio" value="threeTopping"/>
-        <button type="submit">Submit</button>
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" required>
       </form>
       <div id="output"></div>
 </body>
