@@ -51,7 +51,7 @@ function Pizza(toppings, size) {
         document.getElementById("displayToppings").textContent += inputtedToppings + ",";
     });
 
-    const inputtedSize = document.querySelector("input[name=sizePizza]:check").value;
+    const inputtedSize = document.querySelector("input[name=sizePizza]:checked").value;
     document.getElementById("displayName").textContent = inputtedName; 
     document.getElementById("displaySize").textContent = inputtedSize; 
 

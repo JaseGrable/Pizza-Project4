@@ -52,9 +52,19 @@
             <input class="form-check-input" type="radio" name="sizePizza" id="option3" value="Large" required>
             <label class="form-check-label" for="sizeLarge">Large($14)</label>
         </div>
-      </form>
-      <div id="output"></div>
 
-      
+        <button type="submit" class="primaryBtn" id="btn-submit">Checkout</button>
+      </form>
+      <div id="showBill" style="display: none;">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p><strong>Your final bill is...</strong></p>
+            <p>Name: <span id="displayName"></span></p>
+            <p>Toppings: <span id="displayToppings"></span></p>
+            <p>Size: <span id="displaySize"></span></p>
+            <p>Total cost: $<span id="displayTotalCost"></span></p>
+          </div>
+        </div>
+      </div>    
 </body>
 </html>
