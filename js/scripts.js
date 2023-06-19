@@ -26,14 +26,14 @@ function Pizza(toppings, size) {
     }
   }
 
-  //UI Logic
   Pizza.prototype.totalCost = function () {
     const toppingsCost = this.toppingsCost();
     const sizeCost = this.sizeCost();
     const totalCost = toppingsCost + sizeCost;
     return totalCost
   }
-
+  
+  //UI Logic
   document.addEventListener("DOMContentLoaded", function(){
     const form = document.getElementById("pizzaForm");
     form.addEventListener("submit", function(event){
@@ -45,11 +45,15 @@ function Pizza(toppings, size) {
     
     let toppingArray = [];
     const checkboxes = document.querySelectorAll("input[name=toppingCheck]:checked");
-    checkboxes.forEach(function(checkbox) {
-        const inputtedToppings = checkbox.value;
-        toppingArray.push(inputtedToppings);
-        // document.getElementById("displayToppings").textContent += inputtedToppings + ",";
-    });
+
+    if (checkboxes.length <= inputNoToppings) {
+        checkboxes.forEach(function (checkbox) {
+            const inputtedToppings = checkbox.value;
+            toppingArray.push(inputtedToppings);
+        });
+    } else {
+        alert("You can only select up to " + inputNoToppings + " toppings.");
+    }
     
     document.getElementById("displayToppings").textContent = toppingArray.join(", ");
 
