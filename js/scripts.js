@@ -40,8 +40,14 @@ function Pizza(toppings, size) {
 
     const inputtedName = document.getElementById("name").value 
     const inputNoToppings = parseInt(document.getElementById("noToppings").value);
-    let toppingArray = [];
     
-
+    let toppingArray = [];
+    const checkboxes = document.querySelectorAll("input[name=toppingCheck]:checked");
+    checkboxes.forEach(function(checkbox) {
+        const inputtedToppings = checkbox.value;
+        toppingArray.push(inputtedToppings);
+        document.getElementById("displayToppings").textContent += inputtedToppings + ",";
+    });
+    
     })
   })
