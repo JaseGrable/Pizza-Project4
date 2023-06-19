@@ -57,7 +57,7 @@ function Pizza(toppings, size) {
 
     const pizza = new Pizza(toppingArray, inputtedSize);
     
-    const toppingsCost = pizza.toppingsCost()l 
+    const toppingsCost = pizza.toppingsCost(); 
     const sizeCost = pizza.sizeCost(); 
     const totalCost = pizza.totalCost();
     document.getElementById("displayTotalCost").innerHTML = totalCost; 
