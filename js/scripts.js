@@ -24,6 +24,7 @@ function Pizza(toppings, size) {
     }
   }
 
+  //UI Logic
   Pizza.prototype.totalCost = function () {
     const toppingsCost = this.toppingsCost();
     const sizeCost = this.sizeCost();
@@ -36,5 +37,11 @@ function Pizza(toppings, size) {
     form.addEventListener("submit", function(event){
         event.preventDefault();
         document.getElementById("showBill").style.display = "block"; 
+
+    const inputtedName = document.getElementById("name").value 
+    const inputNoToppings = parseInt(document.getElementById("noToppings").value);
+    let toppingArray = [];
+    
+
     })
   })
