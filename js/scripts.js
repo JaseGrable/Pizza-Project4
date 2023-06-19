@@ -1,3 +1,5 @@
+//Business Logic 
+
 function Pizza(toppings, size) {
     this.toppings = toppings;
     this.size = size;
@@ -48,6 +50,17 @@ function Pizza(toppings, size) {
         toppingArray.push(inputtedToppings);
         document.getElementById("displayToppings").textContent += inputtedToppings + ",";
     });
+
+    const inputtedSize = document.querySelector("input[name=sizePizza]:check").value;
+    document.getElementById("displayName").textContent = inputtedName; 
+    document.getElementById("displaySize").textContent = inputtedSize; 
+
+    const pizza = new Pizza(toppingArray, inputtedSize);
     
-    })
-  })
+    const toppingsCost = pizza.toppingsCost()l 
+    const sizeCost = pizza.sizeCost(); 
+    const totalCost = pizza.totalCost();
+    document.getElementById("displayTotalCost").innerHTML = totalCost; 
+
+    });
+  });
